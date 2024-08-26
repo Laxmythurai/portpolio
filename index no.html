@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Laxmythurai Portfolio</title>
+	<link rel="icon" href="images/LT.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/eb907e0153.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="images/Laxmythurai Title.png" class="logo">
+			<ul id="sidemenu">
+				<li> <a href="#header">Hjem</a> </li>
+				<li> <a href="#about">Om meg</a> </li>
+				<li> <a href="#services">Tjenester</a> </li>
+				<li> <a href="#portfolio">Portfolio</a> </li>
+				<li> <a href="#contact">Kontakt</a> </li>
+				<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+			</ul>
+			<div class="language-select">
+				<img src="https://cdn.countryflags.com/thumbs/norway/flag-button-round-250.png" alt="Norsk" onclick="changeLanguage('no')">
+				<div class="dropdown-content">
+					<a href="index en.html" onclick="changeLanguage('en'); return false;">English</a>
+			</div>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p>Byggeingenior Bachelor</p>
+			<h1>Hei, Jeg er <span>Laxmythurai</span><br>Appathurai Fra Oslo, <br>Norge</h1>
+		</div>
+	</div>
+</div>
+<!-- ----------about--------------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/Laxmythurai.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">Om Meg</h1>
+				<p> Jeg har fullført en Bachelorgrad i Byggingeniør ved OsloMet. 
+					Jeg er godt forberedt på å bidra til komplekse byggeprosjekter 
+					og ser frem til å bruke min kunnskap til å utvikle effektive og innovative løsninger i bransjen.</p>
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Ferdigheter</p>
+					<p class="tab-links" onclick="opentab('competence')">Kompetanse</p>
+					<p class="tab-links" onclick="opentab('education')">Utdanning</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Bygningsinformasjonsmodellering</span><br>Revit Autodesk</li>
+						<li><span>Beregning og Dimensjonering</span><br>Dimensjonering av betong-, stål- og trekonstruksjoner</li>
+						<li><span>Byggeteknikk</span><br>Prosjektering og implementering av byggtekniske løsninger.</li>
+						<li><span>Konstruksjonsteknikk</span><br>Analyse og design av bærende konstruksjoner og strukturelle løsninger i byggeprosjekter.</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="competence">
+					<ul>
+						<li><span>Teknisk kompetanse</span><br>BIM<br>VDC<br>Konstruksjonsteknikk<br>Byggeteknikk</li>
+						<li><span>Faglig kompetanse</span><br>Prosjektledelse<br>Regelverk og Standard</li>
+						<li><span>Myke ferdigheter</span><br>Problemløsning<br>Kommunikasjon<br>Teamarbeid</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2021-2024</span><br>Byggingeniør Bachelorprogram - Konstruksjonsteknikk<br>Oslomet Universitet, Oslo</li>
+						<li><span>2015-2016</span><br>Påbygg VG3<br>Stovner VGS, Oslo</li>
+						<li><span>2014-2015</span><br>IKT Servicefag VG2<br>Kuben VGS, Oslo</li>
+						<li><span>2013-2014</span><br>Teknikk og Industri VG1<br>Stovner VGS, Oslo</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ----------services--------------- -->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">Mine Tjeneste</h1>
+		<div class="services-list">
+			<div>
+				<img src="https://damassets.autodesk.net/content/dam/autodesk/www/product-imagery/badge-75x75/revit-badge-75x75.png">
+				<h2>Mine Tjeneste 1</h2>
+				<p>Tekst om tjeneste</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div>
+				<img src="https://damassets.autodesk.net/content/dam/autodesk/www/product-imagery/badge-75x75/revit-badge-75x75.png">
+				<h2>Mine Tjeneste 2</h2>
+				<p>Tekst om tjeneste</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div>
+				<img src="https://damassets.autodesk.net/content/dam/autodesk/www/product-imagery/badge-75x75/revit-badge-75x75.png">
+				<h2>Mine Tjeneste 3</h2>
+				<p>Tekst om tjeneste</p>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ----------portfolio--------------- -->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">Mine Arbeid</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/Work1.png">
+				<div class="layer">
+					<h3>Bygningsinformasjonsmodellering</h3>
+					<p>Short text about work</p>
+					<a href="Mine Arbeid/bim.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/Work2.png">
+				<div class="layer">
+					<h3>Konstruksjonsteknikk</h3>
+					<p>Short text about work</p>
+					<a href="Mine Arbeid/konstruksjonsteknikk.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/Work3.png">
+				<div class="layer">
+					<h3>Byggeteknikk</h3>
+					<p>Short text about work</p>
+					<a href="Mine Arbeid/byggeteknikk.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">Se Mer</a>
+	</div>
+</div>
+<!-- ----------contact--------------- -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Kontakt Meg</h1>
+				<p><i class="fa-solid fa-envelope"></i> thuraiappathurai@yahoo.com</p>
+				<p><i class="fa-solid fa-phone"></i> +47 90633305</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/thurai.appathurai"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com/thurai97/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://wa.me/4790633305"><i class="fa-brands fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/in/laxmythurai-appathurai/"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+				<a href="images/Laxmythurai CV.pdf" download class="btn btn2">Last Ned CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Ditt Navn" required>
+					<input type="email" name="EMail" placeholder="Din E-Post" requiredd>
+					<textarea name="Message" rows="6" placeholder="Skriv Melding"></textarea>
+					<button type="submit" class="btn btn2">Send Inn</button>
+				</form>
+				.<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright @ Webside created by Laxmythurai Appathurai</p>
+	</div>
+</div>
+
+
+<script>
+	
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+
+<script>
+	
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxIPFwkL-CcDzm8EmQCEo4acxdl2JjVqH7eDXJZyqB1a5kLJ5tozr7rvfNlfgKezXzLlg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML = "Message Sent Successfully"
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	},5000)
+      	form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
